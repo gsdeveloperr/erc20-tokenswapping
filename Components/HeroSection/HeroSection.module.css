@@ -1,0 +1,105 @@
+.HeroSection {
+  width: 0%;
+  margin: 6rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: #1e1e1e; /* Dark background color */
+}
+
+.HeroSection_box_heading_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  background-color: #1e1e1e; /* Dark background color */
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.HeroSection_box_heading_img:hover {
+  background-color: #333; /* Darker background color on hover */
+}
+
+.HeroSection_box_heading_img img {
+  width: 80%; /* Adjust the size of the close button icon */
+  height: auto;
+}
+
+.HeroSection_box {
+  margin-top: 5rem;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  width: 30rem;
+  background-color: #333; /* Dark gray background */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.HeroSection_box_heading {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align on the right */
+}
+
+.HeroSection_box_input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid #1e1e1e; /* Dark border color */
+  border-radius: 0.5rem;
+  padding-left: 2rem;
+  margin-top: 1rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.HeroSection_box_input input {
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+  color: #fff; /* White text color */
+  font-size: 1.2rem;
+}
+
+.HeroSection_box_input button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.8rem;
+  line-height: 0;
+  background-color: #1e1e1e; /* Dark background color */
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  color: #fff; /* White text color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.HeroSection_box_btn {
+  background-color: #1e1e1e; /* Dark background color */
+  border: 0;
+  outline: 0;
+  width: 100%;
+  margin-top: 1.5rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  font-size: 1.2rem;
+  color: #fff; /* White text color */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+@media only screen and (max-width: 35em) {
+  .HeroSection {
+    width: 95%;
+  }
+  .HeroSection_box {
+    width: 95%;
+  }
+
+  .HeroSection_box_input input {
+    width: 50%;
+  }
+}
